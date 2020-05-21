@@ -14,7 +14,7 @@ class PierredvPalindromeTest < Minitest::Test
     assert "RaceCar".palindrome?
   end
 
-  def test_palindrome_with_punctiation
+  def test_palindrome_with_punctuation
     assert "Madam, I'm Adam.".palindrome?
   end
 end
