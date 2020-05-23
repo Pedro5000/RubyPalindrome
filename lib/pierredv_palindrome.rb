@@ -2,7 +2,11 @@ require "pierredv_palindrome/version"
 
 module PierredvPalindrome
   def palindrome?
-    processed_content == processed_content.reverse
+    if processed_content.empty?
+      return false
+    else
+      processed_content == processed_content.reverse
+    end
   end
 
   private
